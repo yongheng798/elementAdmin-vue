@@ -1,21 +1,34 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-23 09:29:09
- * @LastEditTime: 2020-06-29 11:39:48
- * @LastEditors: your name
+ * @LastEditTime: 2020-07-20 15:04:33
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-admin-template\src\views\form\index.vue
 -->
 <template>
   <div class="app-container">
-    <el-form ref="form" :model="form" label-width="120px">
+    <el-form
+      ref="form"
+      :model="form"
+      label-width="120px"
+    >
       <el-form-item label="Activity name">
         <el-input v-model="form.name" />
       </el-form-item>
       <el-form-item label="Activity zone">
-        <el-select v-model="form.region" placeholder="please select your zone">
-          <el-option label="Zone one" value="shanghai" />
-          <el-option label="Zone two" value="beijing" />
+        <el-select
+          v-model="form.region"
+          placeholder="please select your zone"
+        >
+          <el-option
+            label="Zone one"
+            value="shanghai"
+          />
+          <el-option
+            label="Zone two"
+            value="beijing"
+          />
         </el-select>
       </el-form-item>
       <el-form-item label="Activity time">
@@ -27,7 +40,12 @@
             style="width: 100%;"
           />
         </el-col>
-        <el-col :span="2" class="line">-</el-col>
+        <el-col
+          :span="2"
+          class="line"
+        >
+          -
+        </el-col>
         <el-col :span="11">
           <el-time-picker
             v-model="form.date2"
@@ -42,10 +60,22 @@
       </el-form-item>
       <el-form-item label="Activity type">
         <el-checkbox-group v-model="form.type">
-          <el-checkbox label="Online activities" name="type" />
-          <el-checkbox label="Promotion activities" name="type" />
-          <el-checkbox label="Offline activities" name="type" />
-          <el-checkbox label="Simple brand exposure" name="type" />
+          <el-checkbox
+            label="Online activities"
+            name="type"
+          />
+          <el-checkbox
+            label="Promotion activities"
+            name="type"
+          />
+          <el-checkbox
+            label="Offline activities"
+            name="type"
+          />
+          <el-checkbox
+            label="Simple brand exposure"
+            name="type"
+          />
         </el-checkbox-group>
       </el-form-item>
       <el-form-item label="Resources">
@@ -55,11 +85,21 @@
         </el-radio-group>
       </el-form-item>
       <el-form-item label="Activity form">
-        <el-input v-model="form.desc" type="textarea" />
+        <el-input
+          v-model="form.desc"
+          type="textarea"
+        />
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="onSubmit">Create</el-button>
-        <el-button @click="onCancel">Cancel</el-button>
+        <el-button
+          type="primary"
+          @click="onSubmit"
+        >
+          Create
+        </el-button>
+        <el-button @click="onCancel">
+          Cancel
+        </el-button>
       </el-form-item>
     </el-form>
   </div>

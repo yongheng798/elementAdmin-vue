@@ -1,5 +1,16 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-06-23 09:29:09
+ * @LastEditTime: 2020-07-23 09:18:08
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-admin-template\src\layout\components\Sidebar\Link.vue
+-->
 <template>
-  <component :is="type" v-bind="linkProps(to)">
+  <component
+    :is="type"
+    v-bind="linkProps(to)"
+  >
     <slot />
   </component>
 </template>

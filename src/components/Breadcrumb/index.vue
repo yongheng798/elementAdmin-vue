@@ -1,9 +1,29 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-06-23 09:29:09
+ * @LastEditTime: 2020-07-23 10:27:37
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-admin-template\src\components\Breadcrumb\index.vue
+-->
 <template>
-  <el-breadcrumb class="app-breadcrumb" separator="/">
+  <el-breadcrumb
+    class="app-breadcrumb"
+    separator="/"
+  >
     <transition-group name="breadcrumb">
-      <el-breadcrumb-item v-for="(item,index) in levelList" :key="item.path">
-        <span v-if="item.redirect==='noRedirect'||index==levelList.length-1" class="no-redirect">{{ item.meta.title }}</span>
-        <a v-else @click.prevent="handleLink(item)">{{ item.meta.title }}</a>
+      <el-breadcrumb-item
+        v-for="(item,index) in levelList"
+        :key="item.path"
+      >
+        <span
+          v-if="item.redirect==='noRedirect'||index==levelList.length-1"
+          class="no-redirect"
+        >{{ item.meta.title }}</span>
+        <a
+          v-else
+          @click.prevent="handleLink(item)"
+        >{{ item.meta.title }}</a>
       </el-breadcrumb-item>
     </transition-group>
   </el-breadcrumb>
@@ -68,7 +88,7 @@ export default {
   display: inline-block;
   font-size: 14px;
   line-height: 50px;
-  margin-left: 8px;
+  margin-left: 30px;
 
   .no-redirect {
     color: #97a8be;

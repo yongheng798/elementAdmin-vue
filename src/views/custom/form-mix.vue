@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-20 17:18:29
- * @LastEditTime: 2020-07-20 19:00:21
+ * @LastEditTime: 2020-07-23 14:37:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-admin-template\src\views\form\formMix.vue
@@ -15,6 +15,7 @@
       <InputNumber slot="form-item" />
       <Select slot="form-item" />
       <Cascader slot="form-item" />
+      <Steps slot="form-item" />
     </FormCard>
   </div>
 </template>
@@ -27,6 +28,7 @@ import Input from '@/components/Form/Input'
 import InputNumber from '@/components/Form/InputNumber'
 import Select from '@/components/Form/Select'
 import Cascader from '@/components/Form/Cascader'
+import Steps from '@/components/Navigation/Steps'
 
 export default {
   name:'',
@@ -37,7 +39,8 @@ export default {
     Input,
     InputNumber,
     Select,
-    Cascader
+    Cascader,
+    Steps
   },
   data(){
     return{}
